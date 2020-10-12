@@ -71,6 +71,18 @@ const products = [
     rating: 4,
     numReviews: 12,
   },
+  {
+    name: 'Google Nest Mini - Upgraded Google Home Mini',
+    image: '/images/google-nest-mini.jpg',
+    description:
+      'Control your home with just your voice. Thoughtfully designed for your home. Get help around your home with your Google Assistant. Enjoy your music. Variety of base colors. Auto-updates.',
+    brand: 'Google',
+    category: 'Electronics',
+    price: 49.99,
+    countInStock: 2,
+    rating: 4,
+    numReviews: 8,
+  },
 ];
 
 // module.exports = products;
