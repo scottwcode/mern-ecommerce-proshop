@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <header>
       {/* <Navbar bg="dark" variant="dark" expand="lg" collapsOnSelect> */}
-      <Navbar bg="primary" variant="dark" expand="lg" collapsOnSelect>
+      <Navbar bg="primary" variant="dark" expand="lg" collapsonselect="true">
         <Container>
           <LinkContainer to="/">
             <Navbar.Brand>ProShop</Navbar.Brand>
