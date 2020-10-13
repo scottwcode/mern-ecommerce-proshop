@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/scottwcode/mern-ecommerce-proshop#readme",
   "dependencies": {
+    "aos": "^2.3.4",
     "bcryptjs": "^2.4.3",
     "colors": "^1.4.0",
     "dotenv": "^8.2.0",
