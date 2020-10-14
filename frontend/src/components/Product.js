@@ -6,7 +6,7 @@ import Rating from './Rating';
 // Animate on Scroll stuff.
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-AOS.init({ duration: 2000, once: false });
+AOS.init({ duration: 1000, once: false });
 
 const Product = ({ product }) => {
   return (
