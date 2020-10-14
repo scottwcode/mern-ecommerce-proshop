@@ -33,7 +33,10 @@ const addOrderItems = asyncHandler(async (req, res) => {
 
     const createOrder = await order.save();
 
-    res.status(201).json(createdOrder);
+    res.status(201).json(createOrder);
+    // THIS LINE BELOW CAUSED A LOT OF PROBLEMS AND ERRORS
+    // ALL BC OF createdOrder instead of createOrder
+    // res.status(201).json(createdOrder);
   }
 });
 
