@@ -21,14 +21,14 @@ const ProductListScreen = ({ history, match }) => {
   const {
     loading: loadingDelete,
     error: errorDelete,
-    successDelete,
+    success: successDelete,
   } = productDelete;
 
   const productCreate = useSelector((state) => state.productCreate);
   const {
     loading: loadingCreate,
     error: errorCreate,
-    successCreate,
+    success: successCreate,
     product: createdProduct,
   } = productCreate;
 
@@ -102,7 +102,7 @@ const ProductListScreen = ({ history, match }) => {
             {/* added 'products &&' here to force rendering */}
             {products &&
               products.map((product) => (
-                <tr key={product._d}>
+                <tr key={product._id}>
                   <td>{product._id}</td>
                   <td>{product.name}</td>
                   <td>${product.price}</td>
