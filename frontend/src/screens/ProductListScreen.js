@@ -45,7 +45,10 @@ const ProductListScreen = ({ history, match }) => {
     if (successCreate) {
       history.push(`/admin/product/${createdProduct._id}/edit`);
     } else {
-      dispatch(listProducts);
+      // Made change to send '' which fixed page refresh after
+      // deleting or adding a product.
+      // dispatch(listProducts);
+      dispatch(listProducts(''));
     }
   }, [
     dispatch,

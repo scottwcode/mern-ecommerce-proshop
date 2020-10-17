@@ -12,6 +12,9 @@ node_modules/
 # themes to try
 /frontend/bootswatch-themes
 
+# stored sample images
+/uploads
+
 # production
 /build
 
