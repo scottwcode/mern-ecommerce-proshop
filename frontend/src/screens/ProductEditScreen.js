@@ -57,6 +57,7 @@ const ProductEditScreen = ({ match, history }) => {
     const formData = new FormData();
     formData.append('image', file);
     setUploading(true);
+
     try {
       const config = {
         headers: {
