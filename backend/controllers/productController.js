@@ -1,4 +1,3 @@
-import { count } from 'console';
 import asyncHandler from 'express-async-handler';
 import Product from '../models/productModel.js';
 
@@ -7,7 +6,7 @@ import Product from '../models/productModel.js';
 // @access Public
 const getProducts = asyncHandler(async (req, res) => {
   // number of items per page
-  const pageSize = 2;
+  const pageSize = 4;
   // Note that req.query gets whatever is after the ? in route
   const page = Number(req.query.pageNumber) || 1;
 
