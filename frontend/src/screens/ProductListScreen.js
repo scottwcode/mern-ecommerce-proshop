@@ -17,6 +17,9 @@ const ProductListScreen = ({ history, match }) => {
   const productList = useSelector((state) => state.productList);
   const { loading, error, products } = productList;
 
+  const userLogin = useSelector((state) => state.userLogin);
+  const { userInfo } = userLogin;
+
   const productDelete = useSelector((state) => state.productDelete);
   const {
     loading: loadingDelete,
@@ -31,9 +34,6 @@ const ProductListScreen = ({ history, match }) => {
     success: successCreate,
     product: createdProduct,
   } = productCreate;
-
-  const userLogin = useSelector((state) => state.userLogin);
-  const { userInfo } = userLogin;
 
   useEffect(() => {
     dispatch({ type: PRODUCT_CREATE_RESET });
@@ -55,6 +55,12 @@ const ProductListScreen = ({ history, match }) => {
     successCreate,
     createdProduct,
   ]);
+
+  // const deleteHandler = (id, name) => {
+  //   if (window.confirm(`Are you sure you want to delete product "${name}"?`)) {
+  //     dispatch(deleteProduct(id));
+  //   }
+  // };
 
   const deleteHandler = (id, name) => {
     if (window.confirm(`Are you sure you want to delete product "${name}"?`)) {
